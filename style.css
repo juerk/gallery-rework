@@ -112,11 +112,10 @@ li a {
     background-position: left;
     border-top: 10px solid #F2955E;
     border-bottom: 10px solid #F2955E;
+    border-right: 20px solid #F2955E;
     margin-top: 15px;
     text-shadow: 0 0 3px #ffffff;
     color: white;
-    border-right: 50px solid #F2955E;
-
   }
 
 
@@ -134,9 +133,10 @@ li a {
     background-position: left;
     border-top: 10px solid #F2955E;
     border-bottom: 10px solid #F2955E;
+    border-right: 20px solid #F2955E;
+
     margin-top: 15px;
     text-shadow: 0 0 3px #ffffff;
-    border-right: 50px solid #F2955E;
   }
   .pueblos-box-bg {
     width: 100%;
@@ -165,7 +165,7 @@ li a {
     background-position: left;
     border-top: 10px solid #F2955E;
     border-bottom: 10px solid #F2955E;
-    border-left: 50px solid #F2955E;
+    border-right: 20px solid #F2955E;
     margin-top: 15px;
     text-shadow: 0 0 3px #ffffff;
   }
@@ -189,7 +189,7 @@ li a {
   }
 
   #mirrors-dropped {
-    width: 95%;
+    width: 100%;
     display: none;
     background-color: #F2955E;
     background: linear-gradient(180deg, rgba(242, 149, 94, 1), rgba(242, 149, 94, .5));
