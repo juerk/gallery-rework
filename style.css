@@ -25,16 +25,9 @@ body {
   background-color: #D9D4CC;
 }
 
-/* #galleryheader {
-  text-align: center;
-  color: white;
-  border-bottom: 2px solid #D9D4CC;
-  letter-spacing: 5px;
-  margin-top: 60px;
-  width: 100%;
-  text-shadow: 0 0 2px #F2955E;
-
-} */
+header {
+  background-color: #F2955E;
+}
 
 #toppuzzle {
   position: fixed;
