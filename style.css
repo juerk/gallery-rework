@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+
+
+/* #336666 */
 
 * {
   margin: 0;
@@ -16,24 +20,61 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Playfair Display', serif;
+  /* font-style: italic; */
   margin-bottom: 50px;
   background-color: #D9D4CC;
 }
 
-#section2 h1 {
-  font-style: italic;
-}
-
 #galleryheader {
   text-align: center;
-  font-style: italic;
-  color: #F2955E;
-  border-bottom: 1px solid #022859;
+  color: white;
+  border-bottom: 2px solid #D9D4CC;
   letter-spacing: 5px;
-  margin-bottom: 5px;
+  margin-top: 40px;
+  /* margin-bottom: 5px; */
+  /* background-color: #F2955E; */
+  width: 100%;
+  text-shadow: 0 0 2px #F2955E;
+
 }
 
-@media only screen and (max-width: 450px) {
+header {
+  /* border: 1px solid red; */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 30px;
+  background-color: #F2955E;
+  /* background: linear-gradient(360deg, rgb(242, 149, 94), rgba(217, 212, 204, 1)); */
+}
+
+#zigzag img {
+  width:200%;
+  margin-top: 4px;
+}
+
+ul {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #336666;
+  /* font-weight: bold; */
+  text-shadow: 0 0 1px white;
+
+}
+
+
+@media only screen and (max-width: 1500px) {
   #section2 {
     /* margin-top: 60px; */
     background-repeat: no-repeat;
@@ -44,52 +85,45 @@ body {
     justify-content: center;
     align-items: center;
   }
-  #galleryheader {
+  /* #galleryheader {
     font-size: 4.5rem;
-  }
+  } */
   #gallery-main {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top: 50px;
   }
 
 
 
   #mirrors-main {
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 200px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,.2)); */
     background-image: linear-gradient(70deg, rgba(242, 149, 94, 0.5), rgb(143, 139, 139)),
     url(img/gallery/mirror/Framed-Mirror-Main.png);
     background-size: cover;
     background-position: left;
-    border: 5px solid #F2955E;
-    margin-top: 10px;
-  }
-  .main-box-bg {
-    width: 100%;
-    height: 120px;
-    /* background-image: url(img/gallery/mirror/Framed-Mirror-Main.png); */
-  }
-  .main-box-content {
-    margin-top: -50px;
-    width: 100%;
-    position: relative;
-    bottom: 30px;
+    border-top: 10px solid #F2955E;
+    border-bottom: 10px solid #F2955E;
+    margin-top: 15px;
+    text-shadow: 0 0 3px #ffffff;
     color: white;
-    /* color: white; */
-    font-family: 'Playfair Display', serif;
+    border-right: 50px solid #F2955E;
+
   }
+
 
 
   #pueblos-main {
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +132,11 @@ body {
     url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
     background-size: cover;
     background-position: left;
-    border: 5px solid #F2955E;
-    margin-top: 10px;
+    border-top: 10px solid #F2955E;
+    border-bottom: 10px solid #F2955E;
+    margin-top: 15px;
+    text-shadow: 0 0 3px #ffffff;
+    border-right: 50px solid #F2955E;
   }
   .pueblos-box-bg {
     width: 100%;
@@ -109,18 +146,15 @@ body {
   .pueblos-box-content {
     margin-top: -50px;
     width: 100%;
-    position: relative;
-    bottom: 30px;
     color: white;
     /* color: white; */
-    font-family: 'Playfair Display', serif;
   }
 
 
 
   #wildlife-main {
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,8 +163,11 @@ body {
     url(img/gallery/wildlife/quail-alt.jpeg);
     background-size: cover;
     background-position: left;
-    border: 5px solid #F2955E;
-    margin-top: 10px;
+    border-top: 10px solid #F2955E;
+    border-bottom: 10px solid #F2955E;
+    border-left: 50px solid #F2955E;
+    margin-top: 15px;
+    text-shadow: 0 0 3px #ffffff;
   }
   .wildlife-box-bg {
     width: 100%;
@@ -140,65 +177,22 @@ body {
   .wildlife-box-content {
     margin-top: -50px;
     width: 100%;
-    position: relative;
-    bottom: 30px;
     color: white;
     /* color: white; */
-    font-family: 'Playfair Display', serif;
   }
-
-
-  #other-main {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,.2)); */
-    background-image: linear-gradient(70deg, rgba(242, 149, 94, 0.5), rgb(143, 139, 139)),
-    url(img/gallery/other/Vine.png);
-    background-size: cover;
-    background-position: left;
-    border: 5px solid #F2955E;
-    margin-top: 10px;
-  }
-  .other-box-bg {
-    width: 100%;
-    height: 120px;
-    /* background-image: url(img/gallery/mirror/Framed-Mirror-Main.png); */
-  }
-  .other-box-content {
-    margin-top: -50px;
-    width: 100%;
-    position: relative;
-    bottom: 30px;
-    color: white;
-    /* color: white; */
-    font-family: 'Playfair Display', serif;
-  }
-
-
 
 
   #header {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+    margin-left: 5%;
   }
 
-  #gallery-main img {
-    width: 100%;
-    height: 360px ;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
-  }
-  .box-dropdown {
-    width: 100%;
-    height: 30px;
-  }
   #mirrors-dropped {
+    width: 95%;
     display: none;
     background-color: #F2955E;
     background: linear-gradient(180deg, rgba(242, 149, 94, 1), rgba(242, 149, 94, .5));
-    margin-right: 21px;
-    margin-left: 21px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
@@ -209,85 +203,38 @@ body {
   }
   
   #mirrors-dropped img {
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   }
 
-  .hovereffect {
-    position: relative;
-    overflow: hidden;
+  #mirrors-dropped img:hover {
+    box-shadow: 5px 5px 5px 4px black(255, 255, 255, 0.9);
   }
-  .hovereffect > .content {
-    margin: -10px;
-    text-align: center;
-    position: absolute;
-    inset: 0;
-    font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: center;
-  }
-  .hovereffect > img,
-  .hovereffect > .content {
-    transition: 300ms ease-in-out;
-    display: flex;
-    align-items: center;
-  }
-  .hovereffect:hover > .content.fade {
-    opacity: 0;
 
-  }
-  .hovereffect > .content.fade {
-    opacity: 0;
-  }
-  .hovereffect:hover > .content.fade {
-    opacity: 1;
-  }
-  .hovereffect:hover > img.blur {
-    filter: blur(5px);
-  }
+
+
+
   
-  #mirror1 {
-    width: 170px;
-    height: 170px;
-  }
-  #mirror1 .content span {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1rem;
-  }
-  #mirror1  .content img{
-    width: 100%;
-    height: 100%;
-  }
-  #mirror1 .content div {
-    margin-top: 20px;
-    width: 40%;
-    height: 35%;
-  }
-  #mirror1  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #mirror1 .content span {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1rem;
-  }
-
+  
   #mirrorflex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 10px;
     margin-bottom: 30px;
+    width: 100%;
   }
   #mirrorflex div {
-    border: #D9D4CC 3px solid;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
   }
+  
+
+
+
+
+
+
 
   footer{
     display: flex;
@@ -325,4 +272,188 @@ body {
     #ig svg:hover {
       width: 20px;
     }
+
+
+
+
+
+    .modal-content {
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 2.5%;
+      top: 0;
+      width: 95%; /* Full width */
+      height: 80%; /* Full height */
+      display: none; /* Hidden by default */
+      margin: 12% auto; /* 15% from the top and centered */
+    }
+    
+    .insidemodalcontent {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    .insidemodalcontent img {
+      margin-top: 30px;
+      width: 98%;
+      height: 360px;
+      margin-left: 4px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+
+     
+    }
+    .insidemodalcontent span {
+      height: 100px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: black;
+      letter-spacing: 10px;
+      /* border-bottom: #30D5C8 20px solid; */
+      background-color: #F2955E;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-bottom: black 5px solid;
+      border-top: black 5px solid;
+      
+    }
+    
+    #outsidemodalcontent {
+      height: 60px;
+      background-color: rgba(158, 153, 153, 0.9);
+      text-align: center;
+      /* border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px; */
+
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    
+    #outsidemodalcontent div {
+      width: 100%;
+      height: 100%;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: #F2955E 5px solid;
+      letter-spacing: 10px;
+      font-weight: bold;
+      background-color: #F2955E;
+      color: black;
+      border-top: 5px solid black;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+    }
+
+    #outsidemodalcontent div:hover {
+      letter-spacing: -1px;
+      cursor: pointer;
+      background-color: black;
+      color: #F2955E;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* #mirror1 {
+    width: 170px;
+    height: 170px;
+  } */
+
+  /* #mirror1 .content span {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+  }
+  #mirror1  .content img{
+    width: 100%;
+    height: 100%;
+  }
+  #mirror1 .content div {
+    margin-top: 20px;
+    width: 40%;
+    height: 35%;
+  }
+  #mirror1  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #mirror1 .content span {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+  } */
+
+  /* .hovereffect { */
+    /* height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    cursor: zoom-in; */
+  
+
+    /* overflow: hidden; */
+    
+  /* } */
+  /* .hovereffect > .content { */
+    /* text-align: center;
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 360px; */
+    /* z-index: 1; */
+
+  /* } */
+  /* .hovereffect > img,
+  .hovereffect > .content { */
+    /* transition: 300ms ease-in-out;
+    display: flex;
+    align-items: center; */
+  /* }
+  .hovereffect:hover > .content.fade {
+    opacity: 0;
+
+  }
+  .hovereffect > .content.fade {
+    opacity: 0;
+  }
+  .hovereffect:hover > .content.fade {
+    opacity: 1;
+  }
+  .hovereffect:hover > img.blur {
+    filter: blur(5px);
+  } */
+  
+
