@@ -46,7 +46,8 @@ header {
 
   width:100%;
   position: relative;
-  top: 4px;
+  top: 7px;
+  background-color: #F2955E;
 }
 #onpage {
   display: flex;
