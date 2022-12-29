@@ -9,10 +9,10 @@ mirrorsDropped.style.display = 'none';
 function toggleDropDown() {
   if (mirrorsDropped.style.display === 'none') {
     mirrorsDropped.style.display = 'block'
-    dropDownSymbol.innerHTML = '-'
+    // dropDownSymbol.innerHTML = '-'
   } else {
     mirrorsDropped.style.display = 'none'
-    dropDownSymbol.innerHTML = '+'
+    // dropDownSymbol.innerHTML = '+'
   }
 }
 
