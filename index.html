@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header>
+
     <div id="toppuzzle">
       <ul>
         <li><a href="">Home</a></li>
@@ -19,42 +19,64 @@
         <li><a href="">Purchase</a></li>
         <li><a href="">Contact</a></li>
       </ul>
-      <div id="zigzag"><img src="img/ca-bg3.png" alt=""></div>
+      <div id="puzzle-down-nav">
+        <!-- <img src="img/ca-bg3.png" alt=""> -->
+      </div>
     </div>
 
     <div id="bottompuzzle">
         <div id="onpagezigzag"><img src="img/ca-bg4.png" alt=""></div>
         <a href="" id="onpage">Gallery</a>
-        <div id="zigzag"><img src="img/ca-bg2.png" alt=""></div>
+        <div id="puzzle-down-gallery-header"><img src="img/ca-bg2.png" alt=""></div>
     </div>
-  </header>
+
 
 
 
 <div id="section2">
 
-  <!-- <h1 id="galleryheader">GALLERY</h1> -->
-
-
   <div id="gallery-main">
 
     <div id="pueblos-main">
       <div class="pueblos-box-content">
-        <div id="zigzagPueblo"><img src="img/ca-bg-green-up.png" alt=""></div>
-        <h1 id="header">PUEBLOS</h1>
+        <div class="real-header">
+          <div class="tagline-header">
+            <span>Designed with function in mind.</span>
+            <span>Available in a unique variety of styles</span>
+             <span>None larger than three feet</span> 
+          </div>
+          <span>PUEBLOS</span>
+        </div>
+        <div class="puzzle-down"><img src="img/ca-bg-green-down-40.png" alt=""></div>
         <span id="box-dropdown" onclick="toggleDropDown()"></span>
-        <div id="zigzag"><img src="img/ca-bg3.png" alt=""></div>
+      </div>
+        <div class="fake-header"></div>
+    </div>
+
+    <div id="nature-main">
+      <div class="fake-header"></div>
+      <div class="nature-box-content">
+        <div class="real-header">
+          <div class="tagline-header">
+            <span>Designed with function in mind.</span>
+            <span>Available in a unique variety of styles</span>
+             <span>None larger than three feet</span> 
+          </div>
+          <span>PUEBLOS</span>
+        </div>
+        <div class="puzzle-down"><img src="img/ca-bg-green-down-40.png" alt=""></div>
+        <span id="box-dropdown" onclick="toggleDropDown()"></span>
       </div>
     </div>
 
-    <div id="wildlife-main">
-      <div class="pueblos-box-content">
+    <!-- <div id="wildlife-main">
+      <div class="nature-box-content">
         <div id="zigzagPueblo"><img src="img/ca-bg-orange-up.png" alt=""></div>
         <h1 id="header-nature">NATURE</h1>
         <span id="box-dropdown" onclick="toggleDropDown()"></span>
         <div id="zigzag"><img src="img/ca-bg-orange-down.png" alt=""></div>
       </div>
-    </div>
+    </div> -->
 
     <div id="mirrors-main" >
       <div class="mirrors-box-content">
@@ -62,19 +84,18 @@
         <h1 id="header">MIRRORS</h1>
         <div id="zigzag"><img src="img/ca-bg3.png" alt=""></div>
       </div>
-      <span id="box-dropdown" onclick="toggleDropDown()">+</span>
-
+      <span id="box-dropdown" onclick="toggleDropDown()">+</span>=
     </div>
 
-    <div id="mirrors-dropped">
-      <div id="mirrors-dropped-desc">
+    <div class="dropped" id="mirrors-dropped">
+
+      <div class="dropped-desc">
         Designed with function in mind. <br> Available in a unique variety of styles. <br> None larger than three feet wide.
         <br>
         <br>
         Inquiries: <a href="contact">contact</a>
       </div>
 
-      
       <div id="mirrorflex">
         <div id="modal0" onclick="showModal(0)">
           <img src="img/gallery/mirror/CoatRack.png" alt="">
@@ -101,6 +122,7 @@
           <img src="img/gallery/mirror/Coatrack-posed.png" alt="">
         </div>
       </div>
+
     </div>
 
 
@@ -108,6 +130,7 @@
 
 
   <div id="modal">
+
     <div id="modalcontent0" class="modal-content">
       <div class="insidemodalcontent">
         <span>COAT RACK MIRROR</span>
@@ -148,11 +171,7 @@
       </div>
     </div>
 
-
   </div>
-
-
-
 
 </div>
 
