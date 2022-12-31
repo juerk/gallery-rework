@@ -80,11 +80,11 @@ li a {
 }
 #pueblos-main {
   z-index: 3;
-  height: 50vh;
+  height: 500px;
   width: 100%;
   padding-top: 100px;
   position: sticky;
-  top: -240px;
+  top: -370px;
   background-size: contain;
   background-position: center;
   background-color: transparent;
