@@ -11,7 +11,7 @@
 </head>
 <body>
 
-
+  <header>
     <div id="toppuzzle">
       <ul>
         <li><a href="">Home</a></li>
@@ -25,15 +25,16 @@
     </div>
 
     <div id="bottompuzzle">
-        <div id="onpagezigzag"><img src="img/ca-bg4.png" alt=""></div>
         <a href="" id="onpage">Gallery</a>
-        <div id="puzzle-down-gallery-header"><img src="img/ca-bg-orange-down-40.png" alt=""></div>
+        <div id="puzzle-down-gallery-header"><img src="img/ca-bg-grey-down-40.png" alt=""></div>
     </div>
+  </header>
 
 
 
 
 <div id="section2">
+
   <div id="firststop"></div>
 
   <div id="gallery-main">
@@ -45,51 +46,55 @@
             <span>Designed with function in mind.</span>
             <span>Available in a unique variety of styles</span>
             <span>None larger than three feet</span> 
-            <span>+</span> 
+            <span id="box-dropdown" onclick="toggleDropDown()">+</span>
           </div>
         </div>
         <div class="puzzle-down"><img src="img/ca-bg-orange-down-40.png" alt=""></div>
-        <span id="box-dropdown" onclick="toggleDropDown()"></span>
       </div>
         <!-- <div class="fake-header"></div> -->
     </div>
 
+  <div id="secondstop"></div>
+
     <div id="nature-main">
       <div class="nature-box-content">
-        <div class="real-header">
+        <div class="real-header-nature">
           <div id="nature-header"><a href="#secondstop">NATURE</a></div> 
           <div class="tagline-header">
             <span>Designed with function in mind.</span>
             <span>Available in a unique variety of styles</span>
             <span>None larger than three feet</span> 
-            <span>+</span> 
+            <span id="box-dropdown" onclick="toggleDropDown()">+</span>
           </div>
         </div>
-        <div class="puzzle-down"><img src="img/ca-bg-orange-down-40.png" alt=""></div>
-        <span id="box-dropdown" onclick="toggleDropDown()"></span>
+        <div class="puzzle-down"><img src="img/ca-bg-grey-down-40.png" alt=""></div>
       </div>
-      <div class="fake-header-small"></div>
-      <div class="fake-header-small"></div>
     </div>
 
-
-    <div id="mirrors-main" >
+    <div id="mirrors-main">
       <div class="mirrors-box-content">
-        <div id="zigzagPueblo"><img src="img/ca-bg-green-up.png" alt=""></div>
-        <h1 id="header">MIRRORS</h1>
-        <div id="zigzag"><img src="img/ca-bg3.png" alt=""></div>
+        <div class="real-header-mirror">
+          <div id="mirrors-header"><a href="#thirdstop">MIRRORS</a></div> 
+          <div class="tagline-header-last">
+            <span>Designed with function in mind.</span>
+            <span>Available in a unique variety of styles</span>
+            <span>None larger than three feet</span> 
+            <span id="box-dropdown" onclick="toggleDropDown()">+</span>
+          </div>
+        </div>
+        <div class="puzzle-down-last"><img src="img/ca-bg-orange-down-40.png" alt=""></div>
       </div>
-      <span id="box-dropdown" onclick="toggleDropDown()">+</span>=
     </div>
+
 
     <div class="dropped" id="mirrors-dropped">
 
-      <div class="dropped-desc">
+      <!-- <div class="dropped-desc">
         Designed with function in mind. <br> Available in a unique variety of styles. <br> None larger than three feet wide.
         <br>
         <br>
         Inquiries: <a href="contact">contact</a>
-      </div>
+      </div> -->
 
       <div id="mirrorflex">
         <div id="modal0" onclick="showModal(0)">
@@ -119,10 +124,6 @@
       </div>
 
     </div>
-
-
-
-
 
   <div id="modal">
 
