@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
 
-
+/* green */
 /* #336666 */
+/* rgb(51, 102, 102) */
+/* orange */
+/* #F2955E */
+/* rgb(242, 149, 94) */
 
 * {
   margin: 0;
@@ -22,15 +26,11 @@ a {
 }
 
 /* Header  */
-header {
-  display: flex;
-  flex-direction: column;
-}
-
 #toppuzzle {
   z-index: 6;
   width: 100%;
   position: fixed;
+  background-color: white;
 }
 #puzzle-down-nav {
   display: flex;
@@ -44,8 +44,8 @@ header {
   height: 80px;
   position: fixed;
   top: 26px;
-
 }
+
 #puzzle-down-gallery-header {
   display: flex;
 }
@@ -56,8 +56,8 @@ header {
   text-transform: uppercase;
   font-size: 2rem;
   text-decoration: none;
-  color: white;
-  background-color: #D9D4CC;
+  color: black;
+  background-color: white;
 
 }
 #puzzle-down-gallery-header img{
@@ -67,7 +67,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #D9D4CC;
 }
 li {
   text-decoration: none;
@@ -77,7 +76,7 @@ li a {
   font-size: 1.2rem;
   text-decoration: none;
   text-shadow: 0 0 1px white;
-  color: white;
+  color: black;
 }
 
 /* MAIN  */
@@ -99,11 +98,11 @@ li a {
   width: 100%;
   padding-top: 100px;
   position: sticky;
-  top: -370px;
+  top: -390px;
   background-size: contain;
-  background-position: center;
-  background-color: transparent;
-  background-image: linear-gradient(360deg, rgba(242, 149, 94, 0.5), rgb(143, 139, 139)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
 }
 #nature-main {
   z-index: 2;
@@ -111,10 +110,10 @@ li a {
   width: 100%;
   padding-top: 20px;
   position: sticky;
-  top: -305px;
+  top: -350px;
   background-size: cover;
   background-position: left;
-  background-image: linear-gradient(70deg, rgba(242, 149, 94, 0.5), rgb(143, 139, 139)), url(img/gallery/wildlife/quail-alt.jpeg);
+  background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/wildlife/quail-alt.jpeg);
 }
 #mirrors-main {
   z-index: 1;
@@ -122,11 +121,10 @@ li a {
   width: 100%;
   padding-top: 40px;
   position: sticky;
-  top: -240px;
-  border: 1px solid red;
+  top: -310px;
   background-size: cover;
-  background-position: left;
-  background-image: linear-gradient(70deg, rgba(242, 149, 94, 0.5), rgb(143, 139, 139)), url(img/gallery/mirror/Framed-Mirror-Main.png);
+  background-position: center;
+  background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/mirror/Sheet-Mirror.png);
 }
 
 .pueblos-box-content {
@@ -138,10 +136,11 @@ li a {
   justify-content: center;
   position: sticky;
   top: 120px;
+  font-size: .5rem;
 }
 #pueblos-header a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .nature-box-content {
   height: 100%;
@@ -152,14 +151,14 @@ li a {
   justify-content: center;
   position: sticky;
   top: 170px;
+  font-size: .5rem;
 }
 #nature-header a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .mirrors-box-content {
   height: 100%;
-
 }
 #mirrors-header {
   padding-top: 20px;
@@ -167,10 +166,11 @@ li a {
   justify-content: center;
   position: sticky;
   top: 240px;
+  font-size: .5rem;
 }
 #mirrors-header a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .real-header {
   height: 100%;
@@ -180,7 +180,6 @@ li a {
   justify-content: space-between;
   font-size: 1rem;
   letter-spacing: 5px;
-  background: linear-gradient(360deg, rgba(242, 149, 94, 0.98), rgba(143, 139, 139, .1));
 }
 .real-header-nature {
   height: 100%;
@@ -190,7 +189,6 @@ li a {
   justify-content: space-between;
   font-size: 1rem;
   letter-spacing: 5px;
-  background: linear-gradient(360deg, rgba(217, 212, 204, 0.98), rgba(143, 139, 139, .1));
 }
 .real-header-mirror {
   height: 100%;
@@ -199,18 +197,16 @@ li a {
   justify-content: space-between;
   font-size: 1rem;
   letter-spacing: 5px;
-  background: linear-gradient(360deg, rgba(242, 149, 94, 0.98), rgba(143, 139, 139, .1));
-
 }
 .tagline-header {
-  height: 40%;
+
+  height: 20%;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 10px;
-  /* border: 1px solid yellow; */
-  color: white;
+  color: black;
 }
 .tagline-header-last {
   height: 40%;
@@ -219,8 +215,7 @@ li a {
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 10px;
-  /* border: 1px solid yellow; */
-  color: white;
+  color: black;
 }
 .puzzle-down {
   display: flex;
@@ -255,13 +250,11 @@ li a {
   width: 100%;
   font-size: 1rem;
   letter-spacing: 5px;
-  background-color: #F2955E;
 }
 #onpagezigzag img {
   width:100%;
   position: relative;
   top: 7px;
-  background-color: #F2955E;
 }
 #zigzagP {
   width: 100%;
@@ -277,7 +270,7 @@ li a {
   display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: linear-gradient(180deg, rgba(242, 149, 94, 0.98), rgba(143, 139, 139, .1));
+  background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/mirror/Sheet-Mirror.png);
 }
 .dropped-desc {
   margin-top: 15px;
@@ -423,6 +416,7 @@ footer{
   border-bottom-right-radius: 10px;
   color: #F2955E;
   background-color: black;
+  
 }
 
 
