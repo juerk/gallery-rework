@@ -26,11 +26,13 @@ a {
 }
 
 /* Header  */
+
 #toppuzzle {
   z-index: 6;
   width: 100%;
   position: fixed;
   background-color: white;
+
 }
 #puzzle-down-nav {
   display: flex;
@@ -41,34 +43,31 @@ a {
 
 #bottompuzzle {
   z-index: 6;
-  height: 80px;
   position: fixed;
-  top: 26px;
+  top: 30px;
 }
-
 #puzzle-down-gallery-header {
   display: flex;
 }
 #onpage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: black;
-  background-color: white;
-
+  color: #F2955E;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #puzzle-down-gallery-header img{
   width:100%;
 }
 ul {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  border: 1px solid red;
 }
 li {
+  width: 200px;
+  text-align: center;
   text-decoration: none;
   list-style: none;
 }
@@ -98,7 +97,7 @@ li a {
   width: 100%;
 
   position: sticky;
-  top: -370px;
+  top: -420px;
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -132,15 +131,17 @@ li a {
   width: 100%;
 }
 #pueblos-header {
-  display: flex;
   position: sticky;
   top: 120px;
+  font-size: 3rem;
   transition: .2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 #pueblos-header a {
   text-decoration: none;
-  color: #F2955E;
+  color: black;
+  /* background-image: linear-gradient(90deg,rgba(242, 149, 94, .1), rgb(255, 255, 255, 1)); */
 
+  width: 100%;
 }
 .nature-box-content {
   height: 100%;

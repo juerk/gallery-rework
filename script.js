@@ -53,17 +53,16 @@ const pueblosHeaderA = document.getElementById('pueblos-header-a')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 350) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 350) {
     pueblosHeader.style.fontSize = "1rem";
-    pueblosHeader.style.justifyContent = "left"
+    pueblosHeader.style.display = "flex";
+    // pueblosHeader.style.justifyContent = "left"
     pueblosHeaderA.style.color = "black"
 
   } else {
     pueblosHeader.style.fontSize = "3rem";
     pueblosHeader.style.justifyContent = "center"
-    pueblosHeaderA.style.color = "#F2955E"
-
-
+    // pueblosHeaderA.style.color = "#F2955E"
   }
 }
 
