@@ -32,7 +32,6 @@ a {
   width: 100%;
   position: fixed;
   background-color: white;
-
 }
 #puzzle-down-nav {
   display: flex;
@@ -54,8 +53,8 @@ a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #F2955E;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 #puzzle-down-gallery-header img{
   width:100%;
@@ -63,10 +62,9 @@ a {
 ul {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid red;
 }
 li {
-  width: 200px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -93,13 +91,12 @@ li a {
 }
 #pueblos-main {
   z-index: 3;
-  height: 500px;
+  height: 400px;
   width: 100%;
-
   position: sticky;
-  top: -420px;
-  background-size: contain;
-  background-position: bottom;
+  top: -310px;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
 }
@@ -111,7 +108,7 @@ li a {
   position: sticky;
   top: -350px;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/wildlife/quail-alt.jpeg);
 }
 #mirrors-main {
@@ -132,16 +129,15 @@ li a {
 }
 #pueblos-header {
   position: sticky;
-  top: 120px;
+  top: 70px;
   font-size: 3rem;
   transition: .2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 #pueblos-header a {
   text-decoration: none;
   color: black;
-  /* background-image: linear-gradient(90deg,rgba(242, 149, 94, .1), rgb(255, 255, 255, 1)); */
-
-  width: 100%;
+  border-top: #F2955E 2px solid;
+  border-bottom: #F2955E 2px solid;
 }
 .nature-box-content {
   height: 100%;
@@ -175,12 +171,12 @@ li a {
 }
 .real-header {
   height: 100%;
-  padding-top: 20px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 1rem;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 .real-header-nature {
   height: 100%;
@@ -200,14 +196,20 @@ li a {
   letter-spacing: 5px;
 }
 .tagline-header {
-
-  height: 20%;
-  padding-bottom: 100px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  top: 10px;
   font-size: 10px;
   color: black;
+}
+.tagline-header span {
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  width: 100%;
+  font-size: 1rem;
+
 }
 .tagline-header-last {
   height: 40%;
@@ -240,7 +242,10 @@ li a {
 }
 #box-dropdown {
   position: relative;
-  top: 30px;
+  top: -50px;
+  font-size: 75px;
+  background-color: transparent;
+  color: black;
 }
 #zigzagPueblo img{
   width: 100%;
