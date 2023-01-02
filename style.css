@@ -96,9 +96,9 @@ li a {
   z-index: 3;
   height: 500px;
   width: 100%;
-  padding-top: 100px;
+
   position: sticky;
-  top: -390px;
+  top: -370px;
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -133,14 +133,14 @@ li a {
 }
 #pueblos-header {
   display: flex;
-  justify-content: center;
   position: sticky;
   top: 120px;
-  font-size: .5rem;
+  transition: .2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 #pueblos-header a {
   text-decoration: none;
-  color: black;
+  color: #F2955E;
+
 }
 .nature-box-content {
   height: 100%;
@@ -201,7 +201,7 @@ li a {
 .tagline-header {
 
   height: 20%;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
