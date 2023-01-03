@@ -41,29 +41,16 @@ a {
 
 /* Header  */
 
+
 #toppuzzle {
-  z-index: 6;
+  z-index: 10;
   width: 100%;
   position: fixed;
+}
+#toppuzzle ul{
+  display: flex;
+  justify-content: space-evenly;
   background-color: white;
-}
-#puzzle-down-nav {
-  display: flex;
-}
-#puzzle-down-nav img {
-  width:100%;
-}
-
-#bottompuzzle {
-  z-index: 6;
-  position: fixed;
-  top: 30px;
-}
-#puzzle-down-gallery-header {
-  display: flex;
-}
-#puzzle-down-gallery-header img{
-  width:100%;
 }
 #onpage {
   text-transform: uppercase;
@@ -72,22 +59,20 @@ a {
   color: #F2955E;
   background-color: white;
 }
-ul {
-  display: flex;
-  justify-content: space-evenly;
-}
 li {
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
-  list-style: none;
+  list-style: none;  
 }
-li a {
+a {
   font-size: 1.2rem;
-  text-decoration: none;
   text-shadow: 0 0 1px white;
   color: black;
 }
+#puzzle-down-gallery-header img{
+  width:100%;
+  margin-top: -1px;
+}
+
+
 
 
 
@@ -111,49 +96,30 @@ li a {
 /* Pueblos */
 #pueblos-all {
   width: 100%;
-  margin-top: -40px;
-  display: flex;
-  flex-direction: column;
   font-size: 1rem;
   letter-spacing: 1px;
 }
-#real-header-daddy {
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 9px;
-}
-.real-header {
-  display: flex;
-  flex-direction: column;
-}
-#pueblos-header a {
-  position: relative;
-  top: 33px;
-  text-decoration: none;
-  font-size: 1rem;
-  color: black;
-}
 #pueblos-header-img {
-
+  z-index: 1;
+  width: 100%;
+  margin-top: 140px;
+  position: sticky;
+  top: 29px;
 }
 
 #pueblos-main {
   height: 400px;
   width: 100%;
+  margin-top: -140px;
   display: flex;
   flex-direction: column;
   background-size: cover;
-  position: sticky;
-  top: -400px;
+ 
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
 }
 #box-dropdown {
-  position: relative;
-  top: -50px;
   font-size: 75px;
   background-color: transparent;
   color: black;
@@ -180,6 +146,9 @@ li a {
   border-bottom-right-radius: 5px;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/mirror/Sheet-Mirror.png);
 }
+#border-dropped-puzzle img {
+  width: 100%;
+}
 
 #mirrorflex img {
   height: 160px;
@@ -198,9 +167,8 @@ li a {
 
 
 .puzzle-down {
-  z-index: 2;
+  z-index: 1;
   display: flex;
-  /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 11)), url(img/gallery/mirror/Sheet-Mirror.png); */
   background: transparent;
 }
 .puzzle-down img{
