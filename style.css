@@ -96,32 +96,32 @@ a {
 /* Pueblos */
 #pueblos-all {
   width: 100%;
+  margin-bottom: 10px;
   font-size: 1rem;
-  letter-spacing: 1px;
 }
 #pueblos-header {
-  margin-top: 100px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 31px;
-
 }
 #pueblos-header img {
-  z-index: 1;
   width: 100%;
 }
-#pueblos-header span {
+#pueblos-header-text {
   z-index: 1;
-  height: 0px;
   width: 100%;
-  font-size: 5rem;
+  position: sticky;
+  top: 80px;
+  font-size: 3.8rem;
 }
 #pueblos-main {
   height: 500px;
   width: 100%;
-  margin-top: -100px;
   display: flex;
+  position: sticky;
+  top: -350px;
   flex-direction: column;
   background-size: cover;
  
@@ -130,28 +130,35 @@ a {
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
 }
 .tagline-header {
+  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .tagline-header span {
   width: 100%;
+  position: relative;
+  top: 50px;
   font-size: 1rem;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  
 }
 #box-dropdown {
-  font-size: 75px;
-  background-color: transparent;
+  z-index: 2;
+  margin-bottom:70px;
   color: black;
+  background-color: #30D5C8;
 }
 
 .dropped {
   width: 100%;
+  margin-bottom: 10px;
   display: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/mirror/Sheet-Mirror.png);
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5));
+
+  /* background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/mirror/Sheet-Mirror.png); */
 }
 #border-dropped-puzzle img {
   width: 100%;
