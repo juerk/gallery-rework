@@ -99,18 +99,28 @@ a {
   font-size: 1rem;
   letter-spacing: 1px;
 }
-#pueblos-header-img {
+#pueblos-header {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 31px;
+
+}
+#pueblos-header img {
   z-index: 1;
   width: 100%;
-  margin-top: 140px;
-  position: sticky;
-  top: 29px;
 }
-
-#pueblos-main {
-  height: 400px;
+#pueblos-header span {
+  z-index: 1;
+  height: 0px;
   width: 100%;
-  margin-top: -140px;
+  font-size: 5rem;
+}
+#pueblos-main {
+  height: 500px;
+  width: 100%;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -119,24 +129,21 @@ a {
   background-repeat: no-repeat;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
 }
-#box-dropdown {
-  font-size: 75px;
-  background-color: transparent;
-  color: black;
-}
 .tagline-header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
-  top: 10px;
-  font-size: 10px;
-  color: black;
+  justify-content: flex-end;
 }
 .tagline-header span {
   width: 100%;
   font-size: 1rem;
+  letter-spacing: 5px;
+}
+#box-dropdown {
+  font-size: 75px;
+  background-color: transparent;
+  color: black;
 }
 
 .dropped {
