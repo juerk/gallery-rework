@@ -1,12 +1,45 @@
-// main drop downs
-const dropDown = document.getElementById('box-dropdown')
+// DROP DOWN LAND NEED TO REFACTOR
+
+const pueblosDropDown = document.getElementById('pueblos-dropdown')
+const pueblosDropped = document.getElementById('pueblos-dropped')
+pueblosDropped.style.display = 'none';
+// pueblosDropDown.innerHTML = '+'
+
+
+function pueblosToggleDropDown() {
+  if (pueblosDropped.style.display === 'none') {
+    pueblosDropped.style.display = 'block'
+    // dropDownSymbol.innerHTML = '-'
+  } else {
+    pueblosDropped.style.display = 'none'
+    // dropDownSymbol.innerHTML = '+'
+  }
+}
+
+
+const natureDropDown = document.getElementById('nature-dropdown')
+const natureDropped = document.getElementById('nature-dropped')
+natureDropped.style.display = 'none';
+// pueblosDropDown.innerHTML = '+'
+
+
+function natureToggleDropDown() {
+  if (natureDropped.style.display === 'none') {
+    natureDropped.style.display = 'block'
+    // dropDownSymbol.innerHTML = '-'
+  } else {
+    natureDropped.style.display = 'none'
+    // dropDownSymbol.innerHTML = '+'
+  }
+}
+
+const mirrorsDropDown = document.getElementById('mirrors-dropdown')
 const mirrorsDropped = document.getElementById('mirrors-dropped')
-let dropDownSymbol = document.getElementById('box-dropdown')
 mirrorsDropped.style.display = 'none';
-// dropDownSymbol.innerHTML = '+'
+// pueblosDropDown.innerHTML = '+'
 
 
-function toggleDropDown() {
+function mirrorsToggleDropDown() {
   if (mirrorsDropped.style.display === 'none') {
     mirrorsDropped.style.display = 'block'
     // dropDownSymbol.innerHTML = '-'
@@ -15,6 +48,7 @@ function toggleDropDown() {
     // dropDownSymbol.innerHTML = '+'
   }
 }
+
 
 // modal land
 let ttlModals = 4;
