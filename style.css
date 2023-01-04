@@ -97,14 +97,10 @@ a {
 #pueblos-header {
   z-index: 2;
   margin-top: 160px;
-  display: flex;
-  flex-direction: column;
   position: sticky;
   top: 31px;
 }
-#pueblos-header img {
-  width: 100%;
-}
+
 #pueblos-header-text {
   z-index: 1;
   width: 100%;
@@ -112,6 +108,10 @@ a {
   position: sticky;
   top: 100px;
   font-size: 2.8rem;
+}
+#pueblos-header img {
+  width: 100%;
+
 }
 #pueblos-main {
   height: 500px;
@@ -122,7 +122,6 @@ a {
   top: -375px;
   flex-direction: column;
   background-size: cover;
- 
   background-position: bottom;
   background-repeat: no-repeat;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/pueblo/Copper-Pueblo-Sculpture-MAIN.png);
@@ -200,6 +199,25 @@ a {
   margin-bottom: 10px;
   font-size: 1rem;
 }
+#nature-header {
+  z-index: 1;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+#nature-header-text {
+  z-index: 1;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 100px;
+  font-size: 2.8rem;
+}
+#nature-header img {
+  width: 100%;
+  margin-top: -138px;
+}
 #nature-main {
   height: 500px;
   width: 100%;
@@ -213,26 +231,7 @@ a {
   background-repeat: no-repeat;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 1), rgb(255, 255, 255, .5)), url(img/gallery/wildlife/quail-alt.jpeg);
 }
-#nature-header {
-  z-index: 1;
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column;
 
-}
-#nature-header-text {
-  z-index: 1;
-  width: 100%;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  position: sticky;
-  top: 100px;
-  font-size: 2.8rem;
-}
-#nature-header img {
-  width: 100%;
-  margin-top: -132px;
-}
 
 
 #mirrors-main {
